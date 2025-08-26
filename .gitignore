@@ -1,0 +1,41 @@
+# ----- OS / IDE -----
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+
+# ----- Gradle / Kotlin -----
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# лог/временные файлы
+*.log
+logs/
+hs_err_pid*.log
+
+# ----- Ktor config overrides -----
+application.local.conf
+*.local.conf
+
+# ----- Env -----
+.env
+.env.*
+!.env.example
+
+# ----- Docker scratch -----
+docker-data/
+volumes/
+.tmp/
+
+# ----- Node / Vite (frontend) -----
+orders-ui/node_modules/
+orders-ui/dist/
+orders-ui/.vite/
+orders-ui/.cache/
+orders-ui/.env.local
+orders-ui/.env.*.local
+orders-ui/npm-debug.log*
+orders-ui/yarn-error.log*
